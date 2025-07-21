@@ -9,6 +9,7 @@
 Esta é uma página web simples e responsiva inspirada na série *The Boys*. O projeto apresenta um layout moderno, menu de navegação com versão mobile (hamburguer), botões estilizados e uma seção de cards com imagens.
 
 O site foi criado para praticar HTML, CSS, responsividade e técnicas básicas de design.
+fiz esse projeto com base no video do canal DEV envolvente, foram feitas algumas alterações com intuito de deixar minha personalidade.
 
 ---
 
