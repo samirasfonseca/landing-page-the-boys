@@ -1,6 +1,6 @@
 # 🎬 Página The-Boys
 
-![Banner](novo.jpg)
+![Banner](novo.png)
 🔗 [Acesse o site aqui](https://samirasfonseca.github.io/landing-page-the-boys/)
 
 
