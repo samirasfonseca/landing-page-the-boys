@@ -3,9 +3,10 @@
 
 /* Variáveis para modo claro (padrão) */
 :root {
+  --back-color: hsla(201, 87%, 15%, 0.685);
   --bg-color: url(img/bg.jpg);
    --text-color: #ee7503;      /* Texto escuro */
-  --primary-color: #0f79af;
+  --primary-color: #053046;
   --btn-bg: #e0e0e0;
   --btn-hover-bg: #cfcfcf;
   --footer-shadow: rgba(0, 0, 0, 0.15);
@@ -13,6 +14,7 @@
 
 /* Variáveis para modo escuro */
 body.dark-theme {
+  --back-color: hsla(201, 78%, 44%, 0.685);
   --bg-color: url(img/fundo-dark.jpg);
    --text-color: #fff;     /* Texto claro */
   --primary-color: #138ecc;
@@ -32,6 +34,9 @@ body.dark-theme {
 }
 
 body {
+  height: 140vh;
+  width: 100vh;
+  box-sizing: border-box;
   background: var(--bg-color);
   color: var(--text-color);
   background-repeat: no-repeat;
@@ -46,6 +51,7 @@ main .text,
 .btn-box2,
 .btn-box .btn,
 h6, p, a {
+  height: 3.5em;
   color: var(--text-color);
 }
 
@@ -78,10 +84,12 @@ header {
 
 /* Menu horizontal desktop */
 .navigation ul {
+  
     font-weight: 900;
   display: flex;
   align-items: center;
   gap: 40px;
+margin: 0;
 }
 
 .navigation ul li a {
@@ -124,11 +132,13 @@ main section {
 }
 
 main section .logoboys {
-  width: 35em;
-  margin: 3em 0;
+  height: 5em;
+  width: 20em;
+  margin: 0.5em 0;
 }
 
 main section .btn-box {
+  width: 50em;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -138,9 +148,10 @@ main section .btn-box {
   padding: 20px 45px;
   background: var(--btn-bg);
   color: var(--text-color);
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
   border-bottom: 2px solid var(--text-color);
   transition: background-color 0.3 ease;
+  border-radius: 25px;
 }
 
 .btn-box .btn:hover,
@@ -150,14 +161,29 @@ main section .btn-box {
 
 main section .text {
     
+    height: 9em;
     font-family: "TikTok Sans", sans-serif;
     font-weight: 800;
     color: var(--text-color);
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     line-height: 22px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+}
+
+p {
+ 
+     background-color: var(--back-color);
+     background-size: cover;
+     width: 100%;
+     hyphens: 100vh;
+    
 }
 
 .btn-box2 {
+  height: 2.5em;
+  width: 12em;
   display: flex;
   align-items: center;
   color:var(--text-color);
@@ -170,6 +196,15 @@ main section .text {
   gap: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 3px;
+  border-radius: 20px;
+}
+.btn-box2 p {
+  font-size: 17px;
+  font-weight: 700;
+  align-items: center;
+  margin-top: .5em;
+  padding: 0;
 }
 
 .btn-box2:hover {
@@ -183,6 +218,7 @@ main section .text {
 
 /* FOOTER */
 footer .cards {
+  height: 6em;
   display: flex;
   align-items: center;
   flex-flow: row;
@@ -192,7 +228,8 @@ footer .cards {
 }
 
 .cards .card {
-  height: 180px;
+  height: 130px;
+  width: 300px;
   max-width: 300px;
   box-shadow: 12px 0px 32px 2px black;
   margin-left: -120px;
